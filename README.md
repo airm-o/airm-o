@@ -1,4 +1,4 @@
-AIRM-O | ATM Information Referencce Model Ontology
+AIRM-O | ATM Information Reference Model Ontology
 ===
 
 
