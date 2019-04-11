@@ -1,9 +1,6 @@
 AIRM-O | ATM Information Reference Model Ontology
 ===
 
-In this repository, you find the following materials related to AIRM-O:
-
-* airm-o.owl -- the OWL ontology in RDF format
 
 Please use the following format to cite this ontology:
 
