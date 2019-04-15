@@ -7,9 +7,10 @@ AIRM-O is an OWL ontology derived from the ATM Information Reference Model maint
 * <a href="http://project-best.eu/downloads/BEST%20D4.4%20Tutorial%20for%20Software%20Developers.pdf">Tutorial for Software Developers</a>
 * <a href="http://project-best.eu/downloads/D1.2%20AIRM%20Compliance%20Validator.pdf">AIRM Compliance Validator</a>
 
+In the xslt folder you'll find XSLT scripts for deriving the OWL ontology from the AIRM UML representation in XMI format. Whereas the ontology itself is published under Creative Commons Attribution 4.0 International License (see below), the XSLT scripts are provided under GPL.
+
 Please use the following format to cite this ontology:
 
 Vennesland, A., Neumayr, B., Schuetz, C. G., Savulov, A., Wilson, S., Gringinger, E., Gorman, J.: AIRM-O -- ATM Information Reference Model Ontology, 2017. https://w3id.org/airm-o/ontology
-
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
