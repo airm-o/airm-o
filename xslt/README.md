@@ -33,23 +33,23 @@ The SAXON parser throws an error since there are two data types declared for “
 
 3. Removal of whitespace from the following names
  
- *	assignedEndPosition
+   *	assignedEndPosition
  
- *	flightLevelChange
+   *	flightLevelChange
  
- *	requiredRouteOffset
+   *	requiredRouteOffset
  
- *	cruisingLevel
+   *	cruisingLevel
  
- *	IN_DEMOLITION
+   *	IN_DEMOLITION
  
- *	INTERMEDIATE_POINT
+   *	INTERMEDIATE_POINT
  
- *	NATIONAL_REGISTERING_AUTHORITY
+   *	NATIONAL_REGISTERING_AUTHORITY
  
- *	PLANNER_ ATCO
+   *	PLANNER_ ATCO
  
- *	TACTICAL_ ATCO
+   *	TACTICAL_ ATCO
 
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
