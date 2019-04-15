@@ -17,7 +17,7 @@ XSLT Parser
 
 The XSLT scripts are known to work with Saxon-PE 9.6.0.5 as parser for for running the transformatiois and OxygenXML as the XMI editor. You'll find an XMI version of the current AIRM version in the airm-xmi folder. 
 
-**Post-Processing of XMI (after export from Sparx Systems Enterprise Architect UML editor)**.
+**Preprocessing of XMI (after export from Sparx Systems Enterprise Architect UML editor prior to transformation)**.
 The XMI generated from Sparx Systems Enterprise Architect must be preprocessed before running the actual transformations. The following preprocessing steps must be performed prior to the transformation:
 
 1. Fix duplicate datatype entry:
