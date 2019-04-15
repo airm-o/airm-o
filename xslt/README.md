@@ -15,7 +15,7 @@ The main XSLT file is airm_xslt_xmi2owl_Main.xsl which imports the other XSLT fi
 XSLT Parser
 ---
 
-The XSLT scripts are known to work with Saxon-PE 9.6.0.5 as parser for for running the transformatiois and OxygenXML as the XMI editor. You'll find an XMI version of the current AIRM version in the airm-xmi folder, preprocessed already and suitable for transformation. 
+The XSLT scripts are known to work with Saxon-PE 9.6.0.5 as parser for for running the transformatiois and OxygenXML as the XMI editor. You'll find an XMI representation of the current AIRM version in the airm-xmi folder, preprocessed already and suitable for transformation. 
 
 **Preprocessing of XMI (after export from Sparx Systems Enterprise Architect UML editor prior to transformation)**.
 The XMI generated from Sparx Systems Enterprise Architect must be preprocessed before running the actual transformations. The following preprocessing steps must be performed prior to the transformation:
