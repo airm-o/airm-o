@@ -1,9 +1,9 @@
-XSLT Scripts for Transformation from AIRM UML to AIRM-O
+Transformation from AIRM UML to AIRM-O
 ===
 
 The XSLT scripts ship as a set of files that collectively transform the ATM Information Reference Model (AIRM) from its original UML representation to OWL (AIRM-O).
 
-XSLT organisation
+Overview
 ---
 
 The main XSLT file is airm_xslt_xmi2owl_Main.xsl which imports the other XSLT files in the folder. These include:
