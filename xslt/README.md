@@ -2,30 +2,30 @@
 
 The XSLT scripts ship as a set of files that collectively transform the ATM Information Reference Model (AIRM) from its original UML representation to OWL (AIRM-O).
 
-XSLT organisation
----
+##XSLT organisation
+
 The main XSLT file is airm_xslt_xmi2owl_Main.xsl which imports the other XSLT files in the folder. These include:
 *	airm_xslt_xmi2owl_Classes.xsl 
 *	airm_xslt_xmi2owl_ObjectProperties.xsl 
 *	airm_xslt_xmi2owl_DatatypeProperties.xsl 
 *	airm_xslt_xmi2owl_Individuals.xsl 
 
-XSLT Parser
----
+##XSLT Parser
+
 The XSLT parser applied when running the transformation is Saxon-PE 9.6.0.5 and the XMI editor used is OxygenXML. 
 
-Post-Processing of XMI (after export from Sparx Systems Enterprise Architect UML editor)
+###Post-Processing of XMI (after export from Sparx Systems Enterprise Architect UML editor)
 The XMI generated from Sparx Systems Enterprise Architect has been processed prior to the transformation is run. These are the steps performed in the processing:
 
-Fix duplicate datatype entry:
+####Fix duplicate datatype entry:
 The SAXON parser throws an error since there are two data types declared for “PackagedElement.PackagedElement.OwnedAttribute.upperValue. This types are ‘uml:LiteralInteger’ and ‘uml:LiteralUnlimitedNatural’. This is resolved by removing ‘uml:LiteralInteger’.
 
-Removal of not needed elements in XMI:
+####Removal of not needed elements in XMI:
 *	Remove the uml:Model branch of the XMI, since this includes duplicates of the xmi:Extension
 *	Remove the <diagrams> elements since they do not contain any information relevant for the transformation
 *	Remove the top-level UML packages (e.g. “v4.1.0”) as we do not want that as a part of the resulting OWL. 
 
-Removal of whitespace from the following names
+####Removal of whitespace from the following names
 *	assignedEndPosition
 *	flightLevelChange
 *	requiredRouteOffset
