@@ -25,11 +25,11 @@ The SAXON parser throws an error since there are two data types declared for “
 
 2. Removal of not needed elements in XMI:
  
- *	Remove the uml:Model branch of the XMI, since this includes duplicates of the xmi:Extension
+   *	Remove the uml:Model branch of the XMI, since this includes duplicates of the xmi:Extension
  
- *	Remove the <diagrams> elements since they do not contain any information relevant for the transformation
+   *	Remove the <diagrams> elements since they do not contain any information relevant for the transformation
  
- *	Remove the top-level UML packages (e.g. “v4.1.0”) as we do not want that as a part of the resulting OWL. 
+   *	Remove the top-level UML packages (e.g. “v4.1.0”) as we do not want that as a part of the resulting OWL. 
 
 3. Removal of whitespace from the following names
  
