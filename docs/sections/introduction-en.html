@@ -1,19 +1,43 @@
 <html><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+
+In order to facilitate handling of the ATM Information Reference Model (AIRM) in practice, we provide a translation of the AIRM UML diagrams into OWL.
+
+<p/>
+
+The transformation of the AIRM UML diagrams into an OWL ontology follows the Object Management Group's guidelines in the Ontology Definition Metamodel [OMG 2014], using the XML Metadata Interchange (XMI) representation of the UML diagrams.
+The UML diagrams in the AIRM Logical Data Model served as the fundamental for the construction of AIRM-O.
+The reason for choosing the Logical Data Model as the fundamental for AIRM-O construction lies in the required level of detail in order to be useful for practical applications.
+This level of detail is achieved by transforming the properties and associations from the Logical Data Model in addition to the entities, i.e., the UML classes.
+The XSLT scripts are made available online along with the ontology in a GitHub repository (<a href="https://github.com/airm-o/airm-o">https://github.com/airm-o/airm-o</a>).
+
+<p/>
+
+AIRM-O was developed as part of the BEST project within the Single European Sky ATM Research (SESAR) program.
+One of the objectives of the BEST project was to develop strategies applying semantic technology for supporting data distribution, supporting the System Wide Information Management (SWIM) target of making information exchange in aviation more efficient and precise. 
+For performance reasons these strategies used smaller modules of the AIRM-O ontology to match data demand with available data in order to offer more accurate information services in ATM. 
+The ontology modules were automatically extracted from the AIRM-O ontology using principles from syntactic locality module extraction [Grau et al. 2008].
+
+<p/>
+
+A critical &ndash; and labor intensive &ndash; task of governance in ATM is ensuring compliance between AIRM and information exchange models. 
+This is a task that is performed manually following a compliance framework that in detail specifies how to interpret compliance at different levels (e.g. semantic equality, generalisation, etc.).
+To reduce the manual burden, the BEST project developed a <i>AIRM Compliance Validator</i> application that used ontology matching techniques in combination with AIRM-O and ontological representations of the exchange models to verify that elements from information exchange models were in line with the semantic constructs specified in the AIRM [Vennesland et al. 2018]. 
+</span>
+
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;https://w3id.org/airm-o/ontology&gt;</td></tr>
+<tr><td><b>airm</b></td><td>&lt;https://w3id.org/airm-o/ontology&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>airm-o</b></td><td>&lt;https://w3id.org/airm-o&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>´
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>airm</b></td><td>&lt;https://w3id.org/airm-o/ontology/AIRM&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
 </tbody>
 </table>
 </div>

@@ -6,7 +6,55 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/airm-o/ontology> .
 
-<https://w3id.org/airm-o/ontology> rdf:type owl:Ontology .
+<https://w3id.org/airm-o/ontology> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/airm-o/ontology/1.0> ;
+                                    <http://purl.org/dc/elements/1.1/abstract> """AIRM-O is an OWL ontology derived from the Air Traffic Management (ATM) Information Reference Model (AIRM), which is maintained by EUROCONTROL. AIRM addresses the issue of semantic interoperability between ATM systems through harmonized and agreed upon definitions of the information being exchanged in ATM. As such, AIRM covers a wide variety of areas relevant for the ATM domain: aircraft, infrastructure, operations, flight, meteorology, environment, stakeholders, surveillance. AIRM-O is a machine-readable representation of AIRM that may serve as the basis for semi-automatic compliance checking of exchange models as well as for the semantic description of packages of ATM information (\"semantic containers\").""" ;
+                                    <http://purl.org/dc/elements/1.1/creator> "Alex Savulov" ,
+                                                                              "Audun Vennesland" ,
+                                                                              "Bernd Neumayr" ,
+                                                                              "Christoph G. Schuetz" ,
+                                                                              "Eduard Gringinger" ,
+                                                                              "Joe Gorman" ,
+                                                                              "Scott Wilson" ;
+                                    <http://purl.org/dc/elements/1.1/description> """AIRM-O is an OWL ontology derived from the Air Traffic Management (ATM) Information Reference Model (AIRM), which is maintained by EUROCONTROL. AIRM addresses the issue of semantic interoperability between ATM systems through harmonized and agreed upon definitions of the information being exchanged in ATM. As such, AIRM covers a wide variety of areas relevant for the ATM domain: aircraft, infrastructure, operations, flight, meteorology, environment, stakeholders, surveillance. AIRM-O is a machine-readable representation of AIRM that may serve as the basis for semi-automatic compliance checking of exchange models as well as for the semantic description of packages of ATM information (\"semantic containers\").""" ;
+                                    <http://purl.org/dc/elements/1.1/title> "ATM Information Reference Model Ontology" ;
+                                    <http://purl.org/dc/terms/bibliographicCitation> "Vennesland, A., Neumayr, B., Schuetz, C. G., Savulov, A., Wilson, S., Gringinger, E., Gorman, J.: AIRM-O -- ATM Information Reference Model Ontology, 2017. https://w3id.org/airm-o/ontology" ;
+                                    <http://purl.org/dc/terms/created> "2017-05-31T00:00:00"^^xsd:dateTime ;
+                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                    rdfs:seeAlso <http://airm.aero/viewer.html> ;
+                                    owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
