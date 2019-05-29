@@ -1,6 +1,7 @@
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-relative-links
+  - jekyll-redirect-from
 relative_links:
   enabled: true
   collections: true
